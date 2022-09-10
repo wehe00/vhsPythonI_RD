@@ -23,7 +23,7 @@ Ende des Multiline Kommentar mit 3 Anführungszeichen"""
 """ **************Block0******************
 Wie sind die Übungsaufgaben aufgebaut
 * beliebiger Text 
-"""              # 3tes Anführungszeichen setzen, dann wird Programmblock aktiv
+""              # 3tes Anführungszeichen setzen, dann wird Programmblock aktiv
 
 # Programm Code
 a = 5   # ab hier jetzt Programmier.......
@@ -45,6 +45,7 @@ Einfache Assignment und Bildschirmausgaben
     Die Zahlen 0 bis 9 (nicht an erster Stelle) 
 ""              # 3tes Anführungszeichen setzen, dann wird Programmblock aktiv
 a = 5   # ab hier jetzt Programmier.......
+print('Ich bin ein "Superman"')
 print(a, a*3, a*6)
 print("hallo", " ,Du")
 print("Hi", a)
@@ -77,12 +78,29 @@ Spezielle Formatierungszeichen (Escapesequenzen) : \n, \t, \', \"
 Die Verwendung von Anführungszeichen in einer print Ausgabe
 * z.B. print("ich bin ein '1A Student' !") 
 * print('ich bin ein "1A Student" !'
-""
-my_str = "\\Hallo\""
-print(my_str)
-my_string = "Hello World"  # ab hier jetzt Programmier.......
-print(my_string, "wie geht es dir")
+"""
+# my_str = "\\Hallo\""
+# my_str = "Hallo,\t\twie gehts es Dir?"
+# print(my_str)
+# my_string = "Hello World"  # ab hier jetzt Programmier.......
+# print(my_string, "wie geht es dir")
 
+title = "Winnetou"
+genre = 7   # Roman
+author = "Karl May"
+publ = 1940
+
+#print("title\t\t\t\t", "genre\t","author\t\t","publ")
+#print(title, "\t\t\t", genre, "\t\t", author, "\t", publ)
+
+title = "Dracula"
+genre = 8   # Horror
+author = "Bram Stoker"
+publ = 1950
+
+# Überschriften, Sep, end
+print(f'{"Title":<25}{"Genre":^7}{"Author":<25}{"Publ":>6}')
+print(f"{title:<25}{genre:^7}{author:<25}{publ:>6}")
 
 
 # **************Ende Block3**************** """
@@ -97,7 +115,7 @@ zusätzliche Parameter in der print Funktion: end="", sep="*"
 print("values", "hallo", sep=" ")
 
 my_string = "Ich bin Student an"  # ab hier jetzt Programmier.......
-print(my_string, "der VHS Neukoelln", sep='')
+print(my_string, "der VHS Neukoelln", sep=' ')
 print(my_string, "der VHS Neukoelln", end='')
 print(" und programiere in Python")
 print("1","2", sep='+')
@@ -111,11 +129,14 @@ formatierte print Ausgabe von Integer
 * z.B. a = 3 
 * print(f'{a}')
 ""
-#print("Spalte1", "      Spalte2")
-#print("Spalte1000", "   Spalte2")
-#print("Spalte1000000", "Spalte2")
+print("Spalte1", "      Spalte2")
+print("Spalte1000", "   Spalte2")
+print("Spalte1000000", "Spalte2")
 
 b = 7
+#print(f"V: {b:>25}")
+#print(f"V: {b:<25}")
+#print(f"V: {b:^25}")
 c = 777
 d = 9999
 e = 1
